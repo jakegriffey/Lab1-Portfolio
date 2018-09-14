@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Mobsters;
+    src: url(./Mobsters.ttf);
+    src: url(./mobsters-webfont.woff);
+}
+
+h1 {
+    font-family: Mobsters;
+    font-stretch: ultra-expanded;
+    background-color: black;
+    color: white;
+}
+
+.oliveBackground {
+    background-color: olive;
+    color: white;
+}
+
+.centeredButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.halvedRight {
+    position: relative;
+    float: right;
+    height: 400px;
+}
+
+.halvedLeft {
+    position: relative;
+    float: left;
+    height: 400px;
+}
+
+.blackBG {
+    background-color: black;
+    color: white;
+}
+
+.darkBlueBG {
+    background-color: navy;
+    color: white;
+}
+
+.greenBG {
+    background-color: green;
+    color: white;
+}
+
+.maroonBG {
+    background-color: maroon;
+    color: white;
+}
+
+.purpleBackground {
+    background-color: purple;
+    color: white;
+}
+
+.about {
+    display: block; 
+    padding-left: 400px;
+    padding-right: 400px;
+    font-family: Arial;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.large {
+    font-size: 100px;
+}
+
+.centered {
+    text-align: center;
+}
+

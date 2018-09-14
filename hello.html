@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            h1 {
+                font-family: Arial;
+            }
+            
+            p {
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Say Hello</h1>
+        <p>Type a name in below and click where it says "Click Me"</p>
+        <form>
+            <input type = "text" id = "myform">
+            <!--onclick is used to add click functionality to any element -->
+            <button onclick = "myFunction(event)">Click Me</button>
+        </form>
+        
+        <p id = "demo"></p>
+        
+        <script>
+            function myFunction(event) {
+                document.getElementById("demo").innerHTML = "Hello " + document.getElementById("myform").value;
+                event.preventDefault();
+            }
+        </script>
+    </body>
+</html>

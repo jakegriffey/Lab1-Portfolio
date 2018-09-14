@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./foobar.css" type="text/css" />
+    </head>
+    <body>
+        <h1>See what happens when you click Foo.</h1>
+        <h2 onclick = "changeText(event)" id="foobar">Foo</h1>
+        <script>
+            function changeText(event) {
+                var header = document.getElementById("foobar")
+                if(header.innerHTML == "Foo") {
+                    document.getElementById("foobar").innerHTML = "Bar"
+                } else {
+                    document.getElementById("foobar").innerHTML = "Foo"
+                }
+            }
+        </script>
+    </body>
+</html>

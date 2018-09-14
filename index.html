@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href = "main.css"/>
+</head>
+<body>
+    <h1 class = "large centered blackBG" id = "mainHeader">jacob Griffey</h1>
+    <form>
+        <button onclick = "changeHeader(event)" id = "changeHeaderButton" class = "centeredButton">I don't like Black</button>
+    </form>
+    
+    <script>
+        function changeHeader(event) {
+            if(document.getElementById("changeHeaderButton").innerHTML == "I don't like Black") {
+                 document.getElementById("mainHeader").className = "large centered oliveBackground"
+                 document.getElementById("changeHeaderButton").innerHTML = "I like Black"
+            } else {
+                document.getElementById("mainHeader").className = "large centered blackBG"
+                document.getElementById("changeHeaderButton").innerHTML = "I don't like Black"
+            }
+            
+            event.preventDefault()
+        }
+    </script>
+    
+    <h2 class = "centered clearfix"><img src = "https://t3.ftcdn.net/jpg/01/64/46/44/500_F_164464452_miWuHzs6piNtCsIVDm94oS6IuQpVYiHA.jpg" class = "halvedLeft"></img>
+    Portfolio<img src = "https://cdn.pixabay.com/photo/2013/07/13/01/19/optical-illusion-155520__340.png" class = "halvedRight"></img></h2>
+    
+    <h3 class = "centered darkBlueBG">About Me</h3>
+    <p class = "about centered">I am a Computer Science student at BYU hoping to graduate in April 2020. 
+    I am passionate about solving problems and creating new things. I currently 
+    work as a Software Developer and have experience with C, C++, Objective-C, Swift, and Java.</p>
+    
+    <h3 class = "centered greenBG">Projects</h3>
+    <ol>
+        <li><a href = "./memes.html">Favorite Memes</a></li>
+        <li><a href = "./hello.html">Say Hello</a></li>
+        <li><a href = "./foo.html">FooBar</a></li>
+    </ol>
+    
+    <h3 class = "centered maroonBG">Work Experience</h3>
+    <p>BYU Office of Digital Humanities</p>
+    <p><em>Computer Programmer May 2017 - Current</em></p>
+    <ul>
+        <li>Translated code from C++ to Swift and Objective-C to make an E-book reader for MacOS and iOS.</li>
+        <li>Designed and implemented custom and native UI Elements in Storyboard for both MacOS and iOS.</li>
+        <li>Debugged and tested individual parts to improve the product.</li>
+    </ul>
+    <p>Experience with C, C++, Objective-C, Swift, Java, Visual Studio, Xcode, and Android Studio</p>
+    
+    <h3 class = "centered purpleBackground">See More</h3>
+    <a href = "https://github.com/jakegriffey">Github</a>
+    <br>
+    <a href = "https://www.linkedin.com/in/jacob-griffey-83b81416b/">LinkedIn</a>
+    <br>
+    <p class = "centered">*I do not own the images on this site</p>
+</body>
